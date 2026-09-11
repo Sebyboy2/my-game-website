@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GameHub — Starter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">GAME<span>HUB</span></a>
+
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search games..." autocomplete="off">
+    </div>
+
+    <button id="random" class="btn">🎲 Random</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">SEBY'S GAME COLLECTION</p>
+        <h1>Play something fun wiff me.</h1>
+        <p class="sub">
+          A clean, fast game portal you can customize with your own games.
+        </p>
+      </div>
+
+      <button id="favoritesBtn" class="btn secondary">☆ Favorites</button>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab active" data-category="all">All Games</button>
+      <button class="tab" data-category="action">Action</button>
+      <button class="tab" data-category="arcade">Arcade</button>
+      <button class="tab" data-category="puzzle">Puzzle</button>
+      <button class="tab" data-category="favorites">Favorites</button>
+    </nav>
+
+    <section id="grid" class="grid"></section>
+  </main>
+
+  <footer>GameHub Starter</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
