@@ -2,42 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>GameHub — Starter</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PolyTrack — GameHub</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #080a0f;
+      color: white;
+      font-family: system-ui, sans-serif;
+    }
+
+    header {
+      padding: 16px 5%;
+    }
+
+    a {
+      color: #a996ff;
+      text-decoration: none;
+    }
+
+    .game-container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    iframe {
+      width: 100%;
+      height: 80vh;
+      min-height: 600px;
+      border: 1px solid #283044;
+      border-radius: 14px;
+      background: black;
+    }
+  </style>
 </head>
+
 <body>
-  <header class="topbar">
-    <a class="logo" href="index.html">GAME<span>HUB</span></a>
-    <div class="search-wrap">
-      <input id="search" type="search" placeholder="Search games..." autocomplete="off">
-    </div>
-    <button id="randomBtn" class="btn">🎲 Random</button>
+  <header>
+    <a href="../../index.html">← Back to games</a>
+    <h1>🏎️ PolyTrack</h1>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div>
-        <p class="eyebrow">SEBY'S GAME COLLECTION</p>
-        <h1>Play something fun wiff me.</h1>
-        <p class="sub">A clean, fast game portal starter you can customize with your own games.</p>
-      </div>
-      <button id="favoritesBtn" class="btn secondary">☆ Favorites</button>
-    </section>
-
-    <nav class="tabs">
-      <button class="tab active" data-filter="all">All Games</button>
-      <button class="tab" data-filter="action">Action</button>
-      <button class="tab" data-filter="arcade">Arcade</button>
-      <button class="tab" data-filter="puzzle">Puzzle</button>
-      <button class="tab" data-filter="favorites">Favorites</button>
-    </nav>
-
-    <section id="grid" class="grid"></section>
-    <p id="empty" class="empty hidden">No games match your search.</p>
-  </main>
-
-  <footer>GameHub Starter · Add only games you have permission to host or embed.</footer>
-  <script src="script.js"></script>
+  <div class="game-container">
+    <iframe
+      src="https://gametreexp.github.io/strongdog3/html/new%20polytrack/game/index.html"
+      allowfullscreen>
+    </iframe>
+  </div>
 </body>
 </html>
